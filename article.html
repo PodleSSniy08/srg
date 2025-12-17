@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Статья — систематика</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/app.js"></script>
+  <script defer src="js/global-search.js"></script>
+  <script defer src="js/parallax.js"></script>
+  <script defer src="js/progress.js"></script>
+  <script defer src="js/highlight.js"></script>
+  <script defer src="js/article-page.js"></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><div class="progress__bar"></div></div>
+  <div class="page">
+    <div class="bg" style="background-image:url('assets/bg-earth.jpg')"></div>
+    <img class="hero-earth hero-earth--scheme earth-img" src="assets/earth-circle.png" alt="Земля" />
+    <header class="header">
+      <div class="container">
+        <nav class="navbar" aria-label="Навигация">
+          <div class="nav-group nav-left">
+            <a class="pill" data-nav href="index.html">Главная</a>
+            <a class="pill" data-nav href="scheme.html">Схема</a>
+            <a class="pill active" data-nav href="articles.html">Статьи</a>
+          </div>
+          <div class="nav-center"></div>
+          <div class="nav-group nav-right">
+            <a class="pill" data-nav href="team.html">Команда</a>
+            <a class="pill" data-nav href="reviews.html">Отзыв</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="section">
+      <div class="container">
+        <section class="hero-box" style="margin-top:120px; background: transparent; box-shadow:none; padding:0">
+          <p class="hero-sub" style="margin-bottom:8px;">Статья по систематике</p>
+          <h1 id="articleTitle" class="hero-title" style="font-size:64px; margin-bottom:16px;">Загрузка…</h1>
+          <div id="articleMeta" class="kb-badges" aria-label="Характеристики статьи"></div>
+          <div class="kb-controls" style="gap:12px; margin-top:14px; flex-wrap:wrap;">
+            <a class="btn" href="articles.html">← Ко всем статьям</a>
+            <div id="articleUpdated" class="kb-count" aria-label="Дата обновления"></div>
+          </div>
+        </section>
+        <section class="card textbox" style="margin-top:16px;" id="articleContent">
+          <div class="note">Загружаем статью…</div>
+        </section>
+        <section class="card" id="articleLinks" style="margin-top:16px; display:none;"></section>
+        <section class="card" id="articleSources" style="margin-top:16px; display:none;"></section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div style="opacity:.85">©PodleSSniy08/biology</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
